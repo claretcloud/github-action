@@ -8,3 +8,5 @@ jobs:
       - name: Print all default env variables
         run: |
           printenv
+      - name: Access event name 
+        run: ${{ github.GITHUB_EVENT_NAME }}
