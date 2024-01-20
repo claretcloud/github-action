@@ -13,6 +13,3 @@ jobs:
           printenv
       - name: Access event name 
         run: echo "${{ github.event_name }}"
-      - name: env at workflow
-        run: echo $APP_VERSION
-      - run: echo $APP_VERSION"
