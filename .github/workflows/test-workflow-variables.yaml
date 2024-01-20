@@ -7,7 +7,7 @@ env:
   API_KEY: "jywq5678393kuy777ww8w962784dhdhdhjwt"
 jobs:
   Explore-GitHub-Actions-ENV:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Print all default env variables
         run: |
@@ -15,13 +15,13 @@ jobs:
       - name: Access event name
         run: echo "${{ github.event_name }}"
   Explore-GitHub-Actions-Custom-ENV:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Env at workflow
         run: echo $APP_NAME
       - run: echo $APP_VERSION
   Explore-GitHub-Actions-Python-ENV:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
