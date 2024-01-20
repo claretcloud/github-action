@@ -17,6 +17,7 @@ jobs:
         run: echo "${{ github.event_name }}"
   Explore-GitHub-Actions-Custom-ENV:
     runs-on: self-hosted
+    needs: Explore-GitHub-Actions-ENV
     steps:
       - name: Env at workflow
         run: echo $APP_NAME
@@ -25,6 +26,7 @@ jobs:
         run: echo $API_KEY_REPO
   Explore-GitHub-Actions-Python-ENV:
     runs-on: self-hosted
+    needs: Explore-GitHub-Actions-Custom-ENV
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
