@@ -1,6 +1,9 @@
 name: GitHub Actions Demo Variables
 run-name: GitHub Actions 🚀
 on: [push]
+env:
+  APP_NAME: "GitHub Actions"
+  APP_VERSION: "1.0.0"
 jobs:
   Explore-GitHub-Actions-ENV:
     runs-on: ubuntu-latest
@@ -10,3 +13,6 @@ jobs:
           printenv
       - name: Access event name 
         run: echo "${{ github.event_name }}"
+      - name: env at workflow
+        run: echo $APP_VERSION
+      - run: echo $APP_VERSION"
