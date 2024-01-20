@@ -25,9 +25,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v3
       - name: Get python version
-        run: python --version
+        run: python3 --version
       - name: Run script
-        run: python test.py
+        run: python3 test.py
