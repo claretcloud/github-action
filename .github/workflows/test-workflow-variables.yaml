@@ -20,6 +20,8 @@ jobs:
       - name: Env at workflow
         run: echo $APP_NAME
       - run: echo $APP_VERSION
+      - name: Env at repo level 
+        run: echo $API_KEY_REPO
   Explore-GitHub-Actions-Python-ENV:
     runs-on: self-hosted
     steps:
