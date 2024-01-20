@@ -1,0 +1,10 @@
+name: GitHub Actions Demo Variables
+run-name: GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions-ENV:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print all default env variables
+        run: |
+          printenv
