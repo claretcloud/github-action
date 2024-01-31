@@ -27,6 +27,8 @@ jobs:
   Explore-GitHub-Actions-Python-ENV:
     runs-on: self-hosted
     needs: Explore-GitHub-Actions-Custom-ENV
+    env:
+      API_KEY: "jywq5678393kuy777ww8w962784dhdhdhjwt-local"
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
