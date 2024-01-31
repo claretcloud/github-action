@@ -8,7 +8,7 @@ env:
   API_KEY_REPO: ${{ vars.API_KEY_REPO}}
 jobs:
   Explore-GitHub-Actions-ENV:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Print all default env variables
         run: |
